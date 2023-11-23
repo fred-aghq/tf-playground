@@ -1,3 +1,6 @@
+# Important
+> This repo is for my own personal development and learning. *I DO NOT TAKE ANY RESPONSIBILITY* for any server/cloud provider charges you incur as a result of using this code.
+
 ## Requirements
 What is actually required depends on what you want to run.
 
@@ -15,8 +18,6 @@ What is actually required depends on what you want to run.
 1. `cd` into one of the top-level dirs, i.e. `cd docker`
 1. run `terraform plan` to check
 1. run `terraform apply` to run
-
-> This repo is for my own personal development and learning. *I DO NOT TAKE ANY RESPONSIBILITY* for any server/cloud provider charges you incur as a result of using this code.
 
 ### How to teardown
 1. run `terraform destroy`
