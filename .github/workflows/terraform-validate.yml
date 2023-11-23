@@ -14,7 +14,6 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Setup Terraform (AWS)
-        uses: hashicorp/setup-terraform@v2
         run: cd aws-ec2 && terraform plan -no-color
 
     
