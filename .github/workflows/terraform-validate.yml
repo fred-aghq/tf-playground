@@ -15,17 +15,17 @@ jobs:
       
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: 4.67.0
 
-
-      - name: Terraform init
+      - name: Terraform init (AWS EC2)
+        working-directory: ./aws-ec2
         run: terraform init
 
-      - name: Terraform format
+      - name: Terraform format (AWS EC2)
+        working-directory: ./aws-ec2
         run: terraform fmt
 
       - name: Terraform validate (AWS EC2)
+        working-directory: ./aws-ec2
         run: cd aws-ec2 && terraform validate
     
 
